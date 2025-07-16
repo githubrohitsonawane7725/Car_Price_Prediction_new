@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: car-price-container
-        image: rohitsonawane7725/car_price_image:v2
+        image: rohitsonawane7725/car_price_image:car_v3
         ports:
-        - containerPort: 6000
+        - containerPort: 7000
