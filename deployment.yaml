@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: app-deployment
+  labels:
+    app: car_price
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: car_price
+  template:
+    metadata:
+      labels:
+        app: car_price
+    spec:
+      containers:
+      - name: car-price-container
+        image: rohitsonawane7725/car_price_image:v2
+        ports:
+        - containerPort: 6000
