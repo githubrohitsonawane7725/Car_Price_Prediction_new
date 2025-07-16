@@ -7,7 +7,7 @@ spec:
     app: car_price
   ports:
     - protocol: TCP
-      port: 80         # Port exposed inside the cluster
+      port: 8089        # Port exposed inside the cluster
       targetPort: 7000 # Port your container listens on
       nodePort: 8087  # Optional fixed NodePort
   type: NodePort
